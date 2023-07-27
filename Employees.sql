@@ -1,6 +1,6 @@
 
 --Select the employee numbers of all individuals who have signed more than 1 contract after the 1st of January 2000.
-```sql
+
 use employees;
 Select emp_no
 from dept_emp
@@ -8,7 +8,7 @@ where from_date >'2000-01-01'
 group by 1
 having count(from_date) > 1
 order by emp_no;
-```
+
 
 --Select the first and last name, the hire date, and the job title of all employees whose first name is “Margareta” and have the last name “Markovitch”.
 
